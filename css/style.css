@@ -61,12 +61,13 @@ a:link {
     height: auto;
     position: relative;
     left: calc(50% - 400px);
-    visibility: hidden;
+    display: none;
+    top: 100px;
 
   }
 
   .mostrarForm{
-    visibility: visible;
+    display: block;
   }
 
 
@@ -108,7 +109,7 @@ a:link {
     background-color: #202020;
     color: white;
     cursor: pointer;
-    position: absolute;
+    position: relative;
     bottom: 0;
   }
 
@@ -128,10 +129,10 @@ a:link {
   .incluir{
     border: solid 1px black;
     width: 60vw;
-    height: 10.9vh;
-    position: absolute;
+    height: auto;
+    position: relative;
+    top: 100px;
     left: 20vw;
-    top:57vh;
     display: none;
   }
 
@@ -139,14 +140,6 @@ a:link {
     display: block;
   }
 
-  #fechar{
-    position: absolute;
-    right: 0;
-    border: none;
-    background-color: transparent;
-    padding: 10px;
-    cursor: pointer;
-  }
 
 
   @media (max-width: 600px) {
@@ -161,7 +154,7 @@ a:link {
         left: 8vw;
     }
 
-    .botoes-index, .botoes-cadastro, .botoes-dep{
+    .botoes-index, .botoes-cadastro {
         width: 300px;
         height: 450px;
         display: grid;
@@ -170,6 +163,18 @@ a:link {
         grid-column-gap: 10px;
         grid-row-gap: 10px;
         left: 4vw;
+    }
+
+    .botoes-dep{
+      width: 300px;
+      height: 330px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      left: 4vw;
+      
     }
 
     .formulario{
