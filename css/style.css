@@ -1,0 +1,166 @@
+.botoes-index{
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: calc(50% - 300px);
+    top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.btn{
+    background-color: #202020;
+    width: 288px;
+    height: 155px;
+    border-radius: 20px;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    cursor: pointer;
+}
+
+a:link {
+    text-decoration: none;
+  }
+
+
+.btn:hover{
+    background-color: #353535;
+    
+}
+
+
+
+  .botoes-index, .botoes-cadastro, .botoes-dep{
+    width: 600px;
+    height: 300px;
+    position: relative;
+    left: calc(50% - 600px);
+    top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+}
+
+
+
+
+
+
+  .formulario{
+    border: solid 1px black;
+    width: 800px;
+    height: auto;
+    position: relative;
+    left: calc(50% - 400px);
+    visibility: hidden;
+
+  }
+
+  .mostrarForm{
+    visibility: visible;
+  }
+
+  .inputs{
+    visibility: hidden;
+  }
+  .mostrarInput{
+    visibility: visible;
+  }
+
+  table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+  }
+
+  td {
+    text-align: center;
+  }
+
+
+  #codigo{
+    width: 100%;
+    height: 100%;
+    outline: none;
+  }
+
+  #descricao{
+    width: 60%;
+    height: 100%;
+    outline: none;
+  }
+
+  #add{
+    width: 20%;
+    height: 100%;
+    outline: none;
+    background-color: #202020;
+    color: white;
+    cursor: pointer;
+  }
+
+  .btn-edit, .btn-delete{
+    width: 10%;
+    height: 100%;
+    outline: none;
+    background-color: #202020;
+    color: white;
+    cursor: pointer;
+    display: none;
+    
+  }
+
+  .edit-block{
+    display: block;
+  }
+  .delete-block{
+    display: block;
+  }
+
+
+  @media (max-width: 600px) {
+    
+    .btn{
+    width: 188px;
+    height: 155px;
+    
+    }
+
+    .botoes{
+        left: 8vw;
+    }
+
+    .botoes-index, .botoes-cadastro, .botoes-dep{
+        width: 300px;
+        height: 450px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        left: 4vw;
+    }
+
+    .formulario{
+        width: 400px;
+        left: 3vw;
+    
+      }
+
+  }
