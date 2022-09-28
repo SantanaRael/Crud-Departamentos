@@ -56,7 +56,6 @@ a:link {
 
 
   .formulario{
-    border: solid 1px black;
     width: 800px;
     height: auto;
     position: relative;
@@ -127,7 +126,6 @@ a:link {
  
 
   .incluir{
-    border: solid 1px black;
     width: 60vw;
     height: auto;
     position: relative;
@@ -140,7 +138,30 @@ a:link {
     display: block;
   }
 
+  .inputs{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+  }
 
+  .confirm{
+    position: absolute;
+    right: 0;
+    background-color: #202020;
+    color: white;
+    border: none;
+    height: 30px;
+    display: none;
+    cursor: pointer;
+
+  }
+
+  .open{
+    display: block;
+    
+  }
 
   @media (max-width: 600px) {
     
