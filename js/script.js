@@ -8,9 +8,10 @@ let add = document.querySelector("#add")
 let excluir = document.querySelector(".botoes-dep").children[3];
 let closeAdd = document.querySelector(".incluir")
 let btn_confirm = document.querySelector(".confirm")
-
+let deletar = document.querySelector("#delete")
 let btn_edit = document.createElement("input")
 let btn_delete = document.createElement("input")
+let mostrarExcluir = document.querySelector(".excluir")
 
 
 
@@ -18,21 +19,20 @@ let btn_delete = document.createElement("input")
 consultar.addEventListener("click", function mostrarForm() {
     formu.classList="formulario mostrarForm"
     btn_confirm.classList="confirm";
-    if(document.querySelector(".mostrarIncluir")){
-        closeAdd.classList="incluir"
-    }
+    closeAdd.classList="incluir"
+    mostrarExcluir.classList="excluir"
+    
 });
 
 
 
 
-incluir.addEventListener(
-  "click",
-  function mostrarInputs() {
+incluir.addEventListener("click", function mostrarInputs() {
       
 
     if(formu.classList == "formulario mostrarForm"){
         inputs.classList.toggle("mostrarInput");
+        
     }
     
   }
@@ -44,6 +44,7 @@ btn_add.addEventListener("click", function(){
     let cod = document.querySelector("#codigo").value;
     let desc = document.querySelector("#descricao").value;
     let tr = document.createElement("tr")
+    tr.id="a" +  cod
     let td1 = document.createElement("td")
     let td2 = document.createElement("td")
     let text_input1 = document.createElement("input")
@@ -51,7 +52,7 @@ btn_add.addEventListener("click", function(){
 
     
     text_input1.classList="inputs"
-    text_input1.type="text"
+    text_input1.type="number"
     text_input1.value=`${cod}`
     text_input1.disabled="true"
 
@@ -71,18 +72,19 @@ btn_add.addEventListener("click", function(){
 });
 
 incluir.addEventListener("click", function(){
-    closeAdd.classList.toggle("mostrarIncluir");
-    if(document.querySelector(".mostrarForm")){
-        formu.classList="formulario"
-    }
+    closeAdd.classList="incluir mostrarIncluir"
+    mostrarExcluir.classList="excluir"
+    formu.classList="formulario"
+    
 })
 
 alterar.addEventListener("click", function(){
 
-    if(document.querySelector(".mostrarIncluir")){
-        closeAdd.classList="incluir"
-    }
+    
+    closeAdd.classList="incluir"
+    mostrarExcluir.classList="excluir"
 
+    
     btn_confirm.classList="confirm open";
     let inputs = document.querySelectorAll(".inputs")
     formu.classList="formulario mostrarForm"
@@ -93,25 +95,23 @@ alterar.addEventListener("click", function(){
 
 btn_confirm.addEventListener("click", function(){
     let inputs = document.querySelectorAll(".inputs")
-
     inputs.forEach((element) => (element.disabled = true));
     
 })
 
+deletar.addEventListener("click", function(){
+    let codigoExclusao = document.querySelector("#codigoExcluir").value
+    codigoExclusao = "a" + codigoExclusao;
+    let elementoDeletado = document.getElementById(codigoExclusao)
+    elementoDeletado.remove()
+    alert("Item Excluido!")
+
+});
+
+
 excluir.addEventListener("click", function(){
-    alert("não deu tempo :/")
+    closeAdd.classList="incluir"
+    formu.classList="formulario"
+    
+    mostrarExcluir.classList="excluir mostrando"
 })
-
-
-
-
-
-///erro: não ta dando pra editar os novos itens, apenas os já existentes
-
-
-
-
-
-
-
-
