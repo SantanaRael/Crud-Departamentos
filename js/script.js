@@ -67,7 +67,7 @@ btn_add.addEventListener("click", function(){
     td2.appendChild(text_input2)
 
     tr.appendChild(td2)
-    alert("Item Adicionado!")
+    alert("Pessoa Adicionada!")
 
 });
 
@@ -104,7 +104,7 @@ deletar.addEventListener("click", function(){
     codigoExclusao = "a" + codigoExclusao;
     let elementoDeletado = document.getElementById(codigoExclusao)
     elementoDeletado.remove()
-    alert("Item Excluido!")
+    alert("Pessoa Excluida!")
 
 });
 
@@ -115,3 +115,4 @@ excluir.addEventListener("click", function(){
     
     mostrarExcluir.classList="excluir mostrando"
 })
+

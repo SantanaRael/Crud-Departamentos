@@ -1,69 +1,64 @@
-.botoes-index{
-    width: auto;
-    height: auto;
-    position: absolute;
-    left: calc(50% - 300px);
-    top: 100px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.square{
+  width: 100vw;
+  height: 60vh;
 }
 
 .btn{
-    background-color: #202020;
-    width: 288px;
-    height: 155px;
-    border-radius: 20px;
-    color: white;
-    font-size: 25px;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    cursor: pointer;
+  width: auto;
+  height: 15px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  display: inline-flex;
+  margin: 13px;
+  padding: 15px;
+  cursor: pointer; 
 }
-
-a:link {
-    text-decoration: none;
-  }
-
 
 .btn:hover{
-    background-color: #353535;
-    
+  background-color: #202020;
+}
+
+.nav-btn{
+  background-color: #435D7D;
+  width: 100vw;
+  height: 70px;
+  display: inline-flex;
+  position: relative;
+  display: grid;
+}
+
+.nav-btn p{
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+  
+}
+
+
+.botoes-dep{
+  position: absolute;
+  right: 200px;
 }
 
 
 
-  .botoes-index, .botoes-cadastro, .botoes-dep{
-    width: 600px;
-    height: 300px;
-    position: relative;
-    left: calc(50% - 600px);
-    top: 100px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+
+.formulario{
+  width: 60vw;
+  height: auto;
+  position: relative;
+  left: 20vw;
+  display: none;
+  top: 100px;
 
 }
-
-
-
-
-
-
-  .formulario{
-    width: 800px;
-    height: auto;
-    position: relative;
-    left: calc(50% - 400px);
-    display: none;
-    top: 100px;
-
-  }
 
   .mostrarForm{
     display: block;
@@ -113,16 +108,14 @@ a:link {
   }
 
   #delete{
-    
-      width: 100%;
-      height: 30px;
-      outline: none;
-      background-color: #202020;
-      color: white;
-      cursor: pointer;
-      position: relative;
-      bottom: 0;
-    
+    width: 100%;
+    height: 30px;
+    outline: none;
+    background-color: #202020;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    bottom: 0;
   }
 
   .btn-edit, .btn-delete{
@@ -136,7 +129,6 @@ a:link {
     
   }
 
-
   .incluir{
     width: 60vw;
     height: auto;
@@ -147,11 +139,11 @@ a:link {
   }
 
   .excluir{
-    width: 30vw;
+    width: 60vw;
     height: auto;
     position: relative;
     top: 100px;
-    left: 31vw;
+    left: 20vw;
     display: none;
   }
 
@@ -174,65 +166,99 @@ a:link {
   .confirm{
     position: absolute;
     right: 0;
-    background-color: #202020;
+    background-color: #28A745;
     color: white;
     border: none;
     height: 30px;
     display: none;
     cursor: pointer;
-
   }
 
   .open{
     display: block;
-    
   }
 
-  @media (max-width: 600px) {
+
+@media  (max-width: 1020px) {
     
-    .btn{
-    width: 188px;
-    height: 155px;
+.nav-btn{
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: auto;
+}
+
+.nav-btn p{
+  grid-area: 1 / 1 / 2 / 2;
+  
+}
+
+
+.botoes-dep{
+  grid-area: 2 / 1 / 3 / 2;
+  right: 10px;
+  
+}
+
+.btn{
+  
+  font-size: 15px;
+  margin: 3px;
+  padding: 10px;
+  cursor: pointer;
+
+}
+
+.formulario{
+  width: 98vw;
+  left: 1vw;
+}
+
+.excluir{
+  width: 98vw;
+  left: 1vw;
+  
+}
+
+.incluir{
+  width: 98vw;
+  left: 1vw;
+}
+
+}
+
+@media (max-width: 500px) {
+
+  .nav-btn p{
+    grid-area: 1 / 1 / 2 / 2;
     
-    }
-
-    .botoes{
-        left: 8vw;
-    }
-
-    .botoes-index, .botoes-cadastro {
-        width: 300px;
-        height: 450px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-        left: 4vw;
-    }
-
-    .botoes-dep{
-      width: 300px;
-      height: 330px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 10px;
-      grid-row-gap: 10px;
-      left: 4vw;
-      
-    }
-
-    .formulario{
-        width: 400px;
-        left: 3vw;
-    
-      }
-
-      .incluir{
-        
-        width: 80vw;
-        left: 7vw;
-      }
-
   }
+  
+  
+  .botoes-dep{
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  
+  .btn{
+    
+    font-size: 15px;
+    margin: 3px;
+    padding: 10px;
+    cursor: pointer;
+    width: 40vw;
+  
+  }
+
+  .nav-btn {
+    background-color: #435D7D;
+    width: 100vw;
+    height: 200px;
+
+}
+}
