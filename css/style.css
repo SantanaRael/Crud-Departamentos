@@ -1,264 +1,239 @@
-
-body{
-  margin: 0;
-  padding: 0;
+body {
+	margin: 0;
+	padding: 0;
 }
 
-.square{
-  width: 100vw;
-  height: 60vh;
+.square {
+	width: 100vw;
+	height: 60vh;
 }
 
-.btn{
-  width: auto;
-  height: 15px;
-  color: white;
-  font-size: 15px;
-  text-align: center;
-  display: inline-flex;
-  margin: 13px;
-  padding: 15px;
-  cursor: pointer; 
+.btn {
+	width: auto;
+	height: 15px;
+	color: white;
+	font-size: 15px;
+	text-align: center;
+	display: inline-flex;
+	margin: 13px;
+	padding: 15px;
+	cursor: pointer;
 }
 
-.btn:hover{
-  background-color: #202020;
+.btn:hover {
+	background-color: #202020;
 }
 
-.nav-btn{
-  background-color: #435D7D;
-  width: 100vw;
-  height: 70px;
-  display: inline-flex;
-  position: relative;
-  display: grid;
+.nav-btn {
+	background-color: #435D7D;
+	width: 100vw;
+	height: 70px;
+	display: inline-flex;
+	position: relative;
+	display: grid;
 }
 
-.nav-btn p{
-  color: white;
-  font-size: 20px;
-  margin-left: 20px;
-  
+.nav-btn p {
+	color: white;
+	font-size: 20px;
+	margin-left: 20px;
 }
 
-
-.botoes-dep{
-  position: absolute;
-  right: 200px;
+.botoes-dep {
+	position: absolute;
+	right: 200px;
 }
 
-
-
-
-.formulario{
-  width: 60vw;
-  height: auto;
-  position: relative;
-  left: 20vw;
-  display: none;
-  top: 100px;
-
+.formulario {
+	width: 60vw;
+	height: auto;
+	position: relative;
+	left: 20vw;
+	display: none;
+	top: 100px;
 }
 
-  .mostrarForm{
-    display: block;
-  }
+.mostrarForm {
+	display: block;
+}
 
+table {
+	border-collapse: collapse;
+	border: 2px solid rgb(200,200,200);
+	letter-spacing: 1px;
+	font-size: 0.8rem;
+	width: 100%;
+}
 
+td, th {
+	border: 1px solid rgb(190,190,190);
+	padding: 10px 20px;
+}
 
-  table {
-    border-collapse: collapse;
-    border: 2px solid rgb(200,200,200);
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-    width: 100%;
-  }
+td {
+	text-align: center;
+}
 
-  td, th {
-    border: 1px solid rgb(190,190,190);
-    padding: 10px 20px;
-  }
+#codigo {
+	width: 100%;
+	height: 100%;
+	outline: none;
+}
 
-  td {
-    text-align: center;
-  }
+#descricao {
+	width: 100%;
+	height: 100%;
+	outline: none;
+}
 
+#add {
+	width: 100%;
+	height: 30px;
+	outline: none;
+	background-color: #202020;
+	color: white;
+	cursor: pointer;
+	position: relative;
+	bottom: 0;
+}
 
-  #codigo{
-    width: 100%;
-    height: 100%;
-    outline: none;
-  }
+#delete {
+	width: 100%;
+	height: 30px;
+	outline: none;
+	background-color: #202020;
+	color: white;
+	cursor: pointer;
+	position: relative;
+	bottom: 0;
+}
 
-  #descricao{
-    width: 100%;
-    height: 100%;
-    outline: none;
-  }
+.btn-edit, .btn-delete {
+	width: 10%;
+	height: 100%;
+	outline: none;
+	background-color: #202020;
+	color: white;
+	cursor: pointer;
+}
 
-  #add{
-    width: 100%;
-    height: 30px;
-    outline: none;
-    background-color: #202020;
-    color: white;
-    cursor: pointer;
-    position: relative;
-    bottom: 0;
-  }
+.incluir {
+	width: 60vw;
+	height: auto;
+	position: relative;
+	top: 100px;
+	left: 20vw;
+	display: none;
+}
 
-  #delete{
-    width: 100%;
-    height: 30px;
-    outline: none;
-    background-color: #202020;
-    color: white;
-    cursor: pointer;
-    position: relative;
-    bottom: 0;
-  }
+.excluir {
+	width: 60vw;
+	height: auto;
+	position: relative;
+	top: 100px;
+	left: 20vw;
+	display: none;
+}
 
-  .btn-edit, .btn-delete{
-    width: 10%;
-    height: 100%;
-    outline: none;
-    background-color: #202020;
-    color: white;
-    cursor: pointer;
- 
-    
-  }
+.mostrando {
+	display: block;
+}
 
-  .incluir{
-    width: 60vw;
-    height: auto;
-    position: relative;
-    top: 100px;
-    left: 20vw;
-    display: none;
-  }
+.mostrarIncluir {
+	display: block;
+}
 
-  .excluir{
-    width: 60vw;
-    height: auto;
-    position: relative;
-    top: 100px;
-    left: 20vw;
-    display: none;
-  }
+.inputs {
+	background-color: transparent;
+	width: 100%;
+	height: 100%;
+	border: none;
+	text-align: center;
+}
 
-  .mostrando{
-    display: block;
-  }
+.confirm {
+	position: absolute;
+	right: 0;
+	background-color: #28A745;
+	color: white;
+	border: none;
+	height: 30px;
+	display: none;
+	cursor: pointer;
+}
 
-  .mostrarIncluir{
-    display: block;
-  }
-
-  .inputs{
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    border: none;
-    text-align: center;
-  }
-
-  .confirm{
-    position: absolute;
-    right: 0;
-    background-color: #28A745;
-    color: white;
-    border: none;
-    height: 30px;
-    display: none;
-    cursor: pointer;
-  }
-
-  .open{
-    display: block;
-  }
-
+.open {
+	display: block;
+}
 
 @media  (max-width: 1020px) {
     
-.nav-btn{
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  height: auto;
-}
+	.nav-btn {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		height: auto;
+	}
 
-.nav-btn p{
-  grid-area: 1 / 1 / 2 / 2;
-  
-}
+	.nav-btn p {
+		grid-area: 1 / 1 / 2 / 2;
+	}
 
+	.botoes-dep {
+		grid-area: 2 / 1 / 3 / 2;
+		right: 10px;
+	}
 
-.botoes-dep{
-  grid-area: 2 / 1 / 3 / 2;
-  right: 10px;
-  
-}
+	.btn {
+		font-size: 15px;
+		margin: 3px;
+		padding: 10px;
+		cursor: pointer;
+	}
 
-.btn{
-  
-  font-size: 15px;
-  margin: 3px;
-  padding: 10px;
-  cursor: pointer;
+	.formulario {
+		width: 98vw;
+		left: 1vw;
+	}
 
-}
+	.excluir {
+		width: 98vw;
+		left: 1vw;
+	}
 
-.formulario{
-  width: 98vw;
-  left: 1vw;
-}
-
-.excluir{
-  width: 98vw;
-  left: 1vw;
-  
-}
-
-.incluir{
-  width: 98vw;
-  left: 1vw;
-}
-
+	.incluir {
+		width: 98vw;
+		left: 1vw;
+	}
 }
 
 @media (max-width: 500px) {
 
-  .nav-btn p{
-    grid-area: 1 / 1 / 2 / 2;
-    
-  }
-  
-  
-  .botoes-dep{
-    grid-area: 2 / 1 / 3 / 2;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-  
-  .btn{
-    
-    font-size: 15px;
-    margin: 3px;
-    padding: 10px;
-    cursor: pointer;
-    width: 40vw;
-  
-  }
+	.nav-btn p {
+		grid-area: 1 / 1 / 2 / 2;
+	}
 
-  .nav-btn {
-    background-color: #435D7D;
-    width: 100vw;
-    height: 200px;
+	.botoes-dep {
+		grid-area: 2 / 1 / 3 / 2;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
 
-}
+	.btn {
+		font-size: 15px;
+		margin: 3px;
+		padding: 10px;
+		cursor: pointer;
+		width: 40vw;
+	}
+
+	.nav-btn {
+		background-color: #435D7D;
+		width: 100vw;
+		height: 200px;
+	}
 }

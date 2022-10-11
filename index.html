@@ -1,70 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
-    <title>CRUD</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="css/style.css">
+	<title>CRUD</title>
 </head>
+
 <body>
-    <div class="nav-btn">
-      <p>CRUD - Gerenciamento de Pessoas</p>
-      <div class="botoes-dep">
-        <div class="btn" style="background-color: #ddb036;"><i class='bx bx-show' style='color:#ffffff; padding: 0px 10px 0 5px; font-size: 20px;' ></i>CONSULTAR</div>
-        <div class="btn" style="background-color: #28A745;"><i class='bx bx-add-to-queue' style='color:#ffffff; padding: 0px 10px 0 5px; font-size: 20px;'  ></i>INCLUIR</div>
-        <div class="btn" style="background-color: #017BFF;" ><i class='bx bx-edit' style='color:#ffffff; padding: 0px 10px 0 5px; font-size: 20px;' ></i>ALTERAR</div>
-        <div class="btn" style="background-color: #DC3544;"><i class='bx bx-trash' style='color:#ffffff; padding: 0px 10px 0 5px; font-size: 20px;' ></i>EXCLUIR</div>
-    </div>
-    </div>
-    
-    <div class="square">
-      <div class="formulario">
-        <table style="border: 1PX solid black;" span="2">
-            <tr>
-              <td>Matrícula</td>
-              
-              <td>Nome</td>
-            </tr>
-
-          </table>
-          <input type="button" class="confirm" value="Confirmar">
-
-    </div>
-
-
-    <div class="incluir">
-        <table style="border: 1px solid black;" >
-            <tr>
-              <td>Matrícula</td>
-              
-              <td>Nome</td>
-            </tr>
-            <tr class="inputs">
-                <td><input type="number" id="codigo"></td>
-                <td><input type="text" id="descricao"></td>
-              </tr>
-          </table>
-          <input type="button" value="Adicionar" id="add">
-    </div>
-
-    <div class="excluir">
-      <table style="border: 1px solid black;" >
-          <tr>
-            <td>Matrícula</td>
-        
-          </tr>
-          <tr class="inputs">
-              <td><input type="number" id="codigoExcluir"></td>
-            </tr>
-        </table>
-        <input type="button" value="Excluir" id="delete">
-  </div>
-
-    </div>
-    
-
-    <script src="js/script.js"></script>
+	<div class="nav-btn">
+		<p>CRUD - Gerenciamento de Pessoas</p>
+		<div class="botoes-dep">
+			<div class="btn" style="background-color: #ddb036;"><i class='bx bx-show' style='color:#ffffff; padding: 0px 10px 0 5px; font-size: 20px;'></i>CONSULTAR</div>
+			<div class="btn" style="background-color: #28A745;"><i class='bx bx-add-to-queue' style='color:#ffffff; padding: 0px 10px 0 5px; font-size: 20px;'></i>INCLUIR</div>
+			<div class="btn" style="background-color: #017BFF;"><i class='bx bx-edit' style='color:#ffffff; padding: 0px 10px 0 5px; font-size: 20px;'></i>ALTERAR</div>
+			<div class="btn" style="background-color: #DC3544;"><i class='bx bx-trash' style='color:#ffffff; padding: 0px 10px 0 5px; font-size: 20px;'></i>EXCLUIR</div>
+		</div>
+	</div>
+	<div class="square">
+		<div class="formulario">
+			<table style="border: 1PX solid black;" span="2">
+				<tr>
+					<td>Matrícula</td>
+					<td>Nome</td>
+				</tr>
+			</table>
+			<input type="button" class="confirm" value="Confirmar"> </div>
+		<div class="incluir">
+			<table style="border: 1px solid black;">
+				<tr>
+					<td>Matrícula</td>
+					<td>Nome</td>
+				</tr>
+				<tr class="inputs">
+					<td>
+						<input type="number" id="codigo">
+					</td>
+					<td>
+						<input type="text" id="descricao">
+					</td>
+				</tr>
+			</table>
+			<input type="button" value="Adicionar" id="add"> </div>
+		<div class="excluir">
+			<table style="border: 1px solid black;">
+				<tr>
+					<td>Matrícula</td>
+				</tr>
+				<tr class="inputs">
+					<td>
+						<input type="number" id="codigoExcluir">
+					</td>
+				</tr>
+			</table>
+			<input type="button" value="Excluir" id="delete"> </div>
+	</div>
+	<script src="js/script.js"></script>
 </body>
+
 </html>
